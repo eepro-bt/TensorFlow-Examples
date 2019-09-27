@@ -32,7 +32,7 @@ pred = tf.arg_min(distance, 0)
 
 accuracy = 0.
 
- Start training
+# Start training
 with tf.Session() as sess:
     # loop over test data
     for i in range(len(Xte)):
