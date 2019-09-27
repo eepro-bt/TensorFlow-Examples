@@ -32,15 +32,8 @@ pred = tf.arg_min(distance, 0)
 
 accuracy = 0.
 
-# Initialize the variables (i.e. assign their default value)
-init = tf.global_variables_initializer()
-
-# Start training
+ Start training
 with tf.Session() as sess:
-
-    # Run the initializer
-    sess.run(init)
-
     # loop over test data
     for i in range(len(Xte)):
         # Get nearest neighbor
